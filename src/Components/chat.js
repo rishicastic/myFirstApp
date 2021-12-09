@@ -17,8 +17,8 @@ const Chat =() =>{
 
     const [messageList, setMessageList] = useState([
         // {text:'Hello, Bhai kya padh rahe ho?', created :new Date(),sent:false},
-        // {text:'Hello, Bhai kya padh rahe ho?', created :new Date(),sent: true},
-        // {text:'Hello, Bhai kyu padh rhe ho?', created :new Date(),sent: false},
+        // {text:'Hello, Bhai kuch nahi padh rahe hai', created :new Date(),sent: true},
+        // {text:'Hello, Bhai theek hai', created :new Date(),sent: false},
 
 
 
