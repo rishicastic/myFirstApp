@@ -1,0 +1,49 @@
+import { useState } from "react";
+
+const Gallery = () => {
+    const img1 =
+    "https://www.pcgamesn.com/wp-content/uploads/2021/01/pubg-patch-10-2-reputation-system.jpg";
+  const img2 =
+    "https://static.wikia.nocookie.net/valorant/images/8/80/Valorant_Cover_Art.jpg/revision/latest?cb=20200302232209";
+  const img3 =
+    "https://i.ytimg.com/vi/_UB5hpk0iqg/maxresdefault.jpg";
+  const img4 =
+    "data:image/jpeg;base64,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";
+  const img5 =
+    "https://i.ytimg.com/vi/UOh0VvNKXX0/maxresdefault.jpg";
+
+  const [mainImg, setMainImg] = useState(img1);
+
+
+  const updateMainImage =(img) => {
+    setMainImg(img);
+  }
+
+    return(
+
+        <div className="container">
+        <h1 className="display-1">My Image Gallery</h1>
+  
+        <img src={mainImg} className="img-fluid" alt="main img" />
+  
+        <div className="row mt-4 mb-5">
+          <div className="col">
+            <img src={img1} className="img-fluid" alt="main img" onClick={() => { updateMainImage(img1) }} />
+          </div>
+          <div className="col">
+            <img src={img2} className="img-fluid" alt="main img" onClick={() => { updateMainImage(img2) }} />
+          </div>
+          <div className="col">
+            <img src={img3} className="img-fluid" alt="main img" onClick={() => { updateMainImage(img3) }} />
+          </div>
+          <div className="col">
+            <img src={img4} className="img-fluid" alt="main img" onClick={() => { updateMainImage(img4) }} />
+          </div>
+          <div className="col">
+            <img src={img5} className="img-fluid" alt="main img" onClick={() => { updateMainImage(img5) }} />
+          </div>
+        </div>
+      </div>
+    );
+}
+export default Gallery;

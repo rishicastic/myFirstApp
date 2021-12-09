@@ -1,0 +1,16 @@
+.img-back{
+    background: url(mm_logo.png);
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+}
+.my-card-body{
+    padding: 50px 100px;
+}
+
+/* @media screen and (max-width:500px) {
+    .img-back{
+        height: 200px;
+    }
+    .my-card-body{
+    padding: 50px 20px; */
